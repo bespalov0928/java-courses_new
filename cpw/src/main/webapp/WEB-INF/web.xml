@@ -7,18 +7,57 @@
     <display-name>ClinicPet</display-name>
 
     <description>
-        
+
     </description>
 
-    <servlet>
-        <servlet-name>ClinicServelet</servlet-name>
-        <servlet-class>ru.bespalov.servlets.ClinicServlet</servlet-class>
 
+    <servlet>
+        <servlet-name>ClinicServlet</servlet-name>
+        <servlet-class>ru.bespalov.servlets.ClinicServlet</servlet-class>
     </servlet>
-    
     <servlet-mapping>
-        <servlet-name>ClinicServelet</servlet-name>
-        <url-pattern></url-pattern>
+        <servlet-name>ClinicServlet</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>UserViewServlet</servlet-name>
+        <servlet-class>ru.bespalov.servlets.UserViewServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserViewServlet</servlet-name>
+        <url-pattern>/user/view</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>UserCreatServlet</servlet-name>
+        <servlet-class>ru.bespalov.servlets.UserCreatServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserCreatServlet</servlet-name>
+        <url-pattern>/user/create</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>UserEditServlet</servlet-name>
+        <servlet-class>ru.bespalov.servlets.UserEditServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserEditServlet</servlet-name>
+        <url-pattern>/user/edit</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>UserDeleteServlet</servlet-name>
+        <servlet-class>ru.bespalov.servlets.UserDeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserDeleteServlet</servlet-name>
+        <url-pattern>/user/delete</url-pattern>
     </servlet-mapping>
 
 </web-app>
